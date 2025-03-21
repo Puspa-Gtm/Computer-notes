@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class 11 Computer Notes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        ul{
+            align-content: center;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/bg.jpg') no-repeat center center/cover;
+            background-opacity: 70%;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease-in-out;
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.6rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            transform: perspective(1000px) rotateX(5deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .content:hover {
+            transform: perspective(1000px) rotateX(0deg);
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .animated-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ffcc5c);
+            padding: 18px 35px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.4rem;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        .animated-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(255, 107, 107, 0.5);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        Grade XI Computer Science Notes
+    </div>
+    
+    <div class="nav">
+        <a href="index.html"> Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    
+    <div class="content">
+        <h2>Welcome to Class 11 Computer Science Notes</h2>
+        <p>
+            This website is dedicated to providing well-structured and comprehensive notes for Class 11 Computer Science students.
+            Each chapter covers essential topics, concepts, and explanations to help you understand the subject easily.
+            Whether you're preparing for exams or just revising, these notes will be your go-to guide.
+        </p>
+        <p>
+            Navigate through the chapters using the menu above and explore detailed notes for each topic.
+            Keep learning and excel in your studies!
+        </p>
+        <h3>Why Choose These Notes?</h3>
+        <ul>
+            <li>Easy-to-understand explanations</li>
+            <li>Well-structured content for quick learning</li>
+            <li>Important points highlighted for revision</li>
+            <li>Designed for Class 11 curriculum</li>
+        </ul>
+        <a href="Ch-1.html" class="animated-btn">Start Learning</a>
+    </div>
+    
+    <div class="footer">
+        &copy; All rights reserved. Grade XI Computer Science, 2025.
+    </div>
+</body>
+</html>

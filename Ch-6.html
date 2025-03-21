@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 6 - Web Technology</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/html2.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.1em;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        h2, h3 {
+            color: #ffcc5c;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapter 6 - Web Technology</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    <div class="content">
+        <h2>Introduction to the Internet</h2>
+        <p>The Internet is a global network of interconnected computers and devices that enables communication and data exchange. It has transformed how we access information, communicate, and perform various tasks. Initially developed as a research project, the Internet has grown into an essential part of modern life, supporting education, business, social interaction, and entertainment.</p>
+
+        <h3>Evolution of the Internet</h3>
+        <p>The Internet originated from ARPANET, a project by the United States Department of Defense in the 1960s. Over the decades, it evolved with the introduction of protocols such as TCP/IP, making it more reliable and scalable. By the 1990s, the World Wide Web (WWW) became a popular platform for browsing and sharing information.</p>
+
+        <h3>Major Uses of the Internet</h3>
+        <p>The Internet serves various purposes, including:</p>
+        <ul>
+            <li>Communication: Email, instant messaging, video calls.</li>
+            <li>Information Retrieval: Accessing websites, search engines, and online libraries.</li>
+            <li>Social Networking: Platforms like Facebook, Twitter, and Instagram.</li>
+            <li>E-commerce: Online shopping and digital transactions.</li>
+            <li>Education: Online learning, courses, and digital resources.</li>
+        </ul>
+        <h3>Internet Services and Applications</h3>
+
+        <h4>World Wide Web (WWW)</h4>
+        <p>The World Wide Web (WWW) is an interconnected system of public web pages accessible through the internet. It uses the Hypertext Transfer Protocol (HTTP) to transmit data and allows users to view web pages and navigate between them using hyperlinks. The WWW was created in 1990 at the European Particle Physics Laboratory (CERN) in Geneva, Switzerland.</p>
+    
+        <h4>Uniform Resource Locator (URL)</h4>
+        <p>A URL (Uniform Resource Locator) is a unique address used to identify the location of a resource on the internet. URLs are used by web browsers to retrieve web pages, images, and other content from servers. A URL typically consists of a protocol (such as HTTP or HTTPS), a domain name (like www.example.com), and an optional path to a specific file or page.</p>
+    
+        <h4>HTTPS (Hypertext Transfer Protocol Secure)</h4>
+        <p>HTTPS is an extension of HTTP that provides secure communication over a computer network. It encrypts data between the web browser and server to ensure privacy and data integrity. Websites that handle sensitive information, such as online banking, use HTTPS to protect user data.</p>
+    
+        <h4>Web Pages and Websites</h4>
+        <p>A web page is a document on the World Wide Web that is typically written in HTML and viewed through a web browser. It can contain text, images, videos, and interactive content. A website is a collection of related web pages hosted on a server and identified by a common domain name.</p>
+    
+        <h4>FTP (File Transfer Protocol)</h4>
+        <p>FTP (File Transfer Protocol) is a standard network protocol used to transfer files from one host to another over the internet. It allows users to upload, download, and manage files on a remote server. FTP is commonly used for uploading website files to hosting servers.</p>
+    
+        <h4>Web Browser</h4>
+        <p>A web browser is a software application used to access and view web pages on the internet. It retrieves content from web servers and displays it on the user's screen. Popular web browsers include Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge.</p>
+        <h3>Common Terms Related to the Internet</h3>
+
+    <h4>1. ISP (Internet Service Provider)</h4>
+    <p>An Internet Service Provider (ISP) is an organization that provides Internet access to users. ISPs offer services such as broadband, fiber optics, and dial-up connections. They act as intermediaries between users and the Internet, allowing them to connect to the global network. Some well-known ISPs in Nepal are Mercantile, Everest Net, and WorldLink.</p>
+
+    <h4>2. Link</h4>
+    <p>A link, also known as a hyperlink, is a clickable element on a web page that directs users to another page or resource. Links can be text or images and are typically highlighted or underlined to indicate interactivity. They serve as an essential navigation tool, allowing users to move between web pages and access related information.</p>
+
+    <h4>3. Search Engine</h4>
+    <p>A search engine is a software system that searches the Internet for specific information based on user queries. It indexes websites and web pages to provide relevant search results. Popular search engines include Google, Bing, Yahoo, and DuckDuckGo. They help users find information quickly and efficiently by ranking web pages according to relevance and content quality.</p>
+
+    <h4>4. Domain Name and IP Address</h4>
+    <p>A domain name is a human-readable address used to access websites on the Internet. It typically consists of two or more parts separated by dots, such as 'example.com.' Each domain name corresponds to a unique IP (Internet Protocol) address, which identifies the server hosting the website. IP addresses are numerical labels that facilitate data transfer between devices over the network.</p>
+
+    <h4>5. DNS Server</h4>
+    <p>A DNS (Domain Name System) server translates domain names into IP addresses, allowing users to access websites using human-readable URLs instead of numerical addresses. DNS servers maintain a database of domain name mappings and respond to queries by providing the corresponding IP address. This system simplifies navigation and enhances user convenience.</p>
+
+    <h4>6. Web Server</h4>
+    <p>A web server is a computer system that hosts websites and delivers web pages to users upon request. It processes incoming HTTP or HTTPS requests from clients (web browsers) and serves the requested content. Web servers play a crucial role in maintaining website availability and performance. Apache, Nginx, and Microsoft IIS are some of the most widely used web server software.</p>
+    
+    <h3>Introduction to HTML</h3>
+    <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages and applications. It provides the basic structure of a webpage and allows users to incorporate text, images, videos, links, and other multimedia elements. HTML files are saved with a ".html" or ".htm" extension and are interpreted by web browsers to display content.</p>
+
+    <h4>Uses of HTML</h4>
+    <ul>
+        <li>Creating the basic structure and layout of a webpage.</li>
+        <li>Embedding multimedia elements like images, videos, and audio files.</li>
+        <li>Providing interactive features through forms and links.</li>
+        <li>Formatting text with headings, paragraphs, lists, and more.</li>
+        <li>Enabling cross-browser compatibility to ensure consistent display.</li>
+    </ul>
+
+    <h4>HTML Attributes</h4>
+    <p>HTML attributes are additional information provided within HTML tags to define properties or modify behavior. Attributes are included within the opening tag and usually consist of a name and value pair, separated by an equals sign. For example:</p>
+    <pre>
+        <code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>
+    </pre>
+    <p>Common attributes include:</p>
+    <ul>
+        <li><strong>href:</strong> Specifies the URL of a link.</li>
+        <li><strong>src:</strong> Defines the source file for images or other media.</li>
+        <li><strong>alt:</strong> Provides alternative text for images.</li>
+        <li><strong>title:</strong> Adds a tooltip to an element.</li>
+        <li><strong>style:</strong> Applies inline CSS styles to elements.</li>
+    </ul>
+
+    <h2>Introduction to CSS</h2>
+    <p>CSS (Cascading Style Sheets) is a style sheet language used to define the presentation of a document written in HTML or XML. It controls the layout, color schemes, font styles, spacing, and overall visual appearance of web pages. CSS separates content from design, making it easier to maintain and update the presentation without altering the underlying structure. CSS is essential for creating visually appealing, responsive, and user-friendly websites.</p>
+<h3>Types of CSS</h3>
+<ul>
+    <li><h4>Internal CSS</h4><p>Internal CSS is used to define styles within the <code>&lt;style&gt;</code> tag located inside the <code>&lt;head&gt;</code> section of an HTML document. This method is useful when applying styles to a single page. Although it keeps the CSS centralized, it can make the document lengthy and less manageable when dealing with extensive styling.</p>
+        </li>
+    <li><h4>Inline CSS </h4><p>Inline CSS is written directly within the HTML element using the <code>style</code> attribute. It is useful for applying unique styles to individual elements. However, it is generally discouraged because it mixes content with presentation, making the code less organized and harder to maintain.</p>
+</li>
+    <li><h4>External CSS  </h4><p>External CSS involves linking an HTML document to an external stylesheet file using the <code>&lt;link&gt;</code> tag within the <code>&lt;head&gt;</code> section. It allows for the separation of style from content, promoting cleaner and more maintainable code. External stylesheets can be reused across multiple pages, reducing redundancy and ensuring a consistent design.</p>
+</li>
+</ul>
+    </div>
+    <div class="footer">&copy; All rights reserved. Grade XI Computer Science, 2025.</div>
+</body>
+</html>

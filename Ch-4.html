@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 4 - Application Package</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/ap2.jpg') no-repeat center center/cover;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        .image {
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            align-items: center;
+        }
+        h2, h3, h4 {
+            color: #ffcc5c;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapter 4 - Application Package</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    <div class="content">
+        <h2>MS Word</h2>
+        <p>MS Word is a powerful word processing software developed by Microsoft. It is designed to create, edit, and format text-based documents with a wide range of formatting options. Users can compose various documents like letters, reports, and books while utilizing templates, styles, and themes for a professional appearance.</p>
+        <h3>Features of MS Word:</h3>
+        <ul>
+            <li><b>Text Formatting:</b> Editing text styles, fonts, sizes, colors, alignment, and more for customized documents.</li>
+            <li><b>Page Layout:</b> Setting margins, orientation, columns, headers, footers, and page breaks for structured documents.</li>
+            <li><b>Proofing Tools:</b> Includes spell check, grammar check, thesaurus, word count, and language translation features.</li>
+            <li><b>Table & Graph Creation:</b> Inserting tables, charts, and graphs for structured and visual representation of data.</li>
+        </ul>
+
+        <h2>MS Excel</h2>
+        <p>MS Excel is a spreadsheet software from Microsoft used for organizing, analyzing, and visualizing data. It provides a grid of cells where data can be entered and manipulated using functions and formulas. It's commonly used for financial analysis, statistical calculations, and data visualization.</p>
+        <h3>Features of MS Excel:</h3>
+        <ul>
+            <li><b>Formulas & Functions:</b> Built-in functions for calculations, data analysis, and logical operations.</li>
+            <li><b>Pivot Tables:</b> Summarizes large amounts of data into simple, understandable tables.</li>
+            <li><b>Charting Tools:</b> Creates visual representations of data using various chart types, such as bar, line, pie, etc.</li>
+            <li><b>Conditional Formatting:</b> Highlights data based on specific criteria for better readability.</li>
+        </ul>
+        <h3>Common Terminologies Used in Spreadsheet:</h3>
+        <ul>
+            <li><b>Worksheet (Spreadsheet):</b> A worksheet is a collection of rows and columns used to list, organize, and calculate data.</li>
+            <li><b>Workbook:</b> The files used in spreadsheets are known as workbooks. A workbook consists of multiple worksheets. By default, a workbook contains three worksheets.</li>
+            <li><b>Cell:</b> The intersection of rows and columns is called a cell. To refer to a cell, enter a column letter followed by a row number (e.g., C2). The cell where the intersection point is highlighted is called the active cell.</li>
+        </ul>
+        <h3>Cell Reference in Excel</h3>
+        <p>A cell reference identifies the location of a cell in a spreadsheet by combining its column letter and row number, like A1 or B3. It's essential for writing formulas, ensuring calculations reference the correct cells. There are two main types:</p>
+        <p><b>Relative Cell Reference:</b> This type of reference changes automatically when copied to another location. For example, if a formula in cell A1 is copied to B1, the reference will adjust accordingly. Common examples include A1, B4, and G9.</p>
+        <p><b>Absolute Cell Reference:</b> This reference remains fixed even when the formula is moved or copied. It is represented by adding a dollar sign ($) before the column letter and row number, like $A$2 or $G$9. Pressing the "F4" key can quickly convert a relative reference to an absolute one. Absolute references are crucial when you need calculations to always refer to the same cell.</p>
+    
+        <h2>MS PowerPoint</h2>
+        <p>MS PowerPoint is a presentation software by Microsoft designed to create visually appealing slideshows. It allows users to combine text, images, videos, charts, and animations to convey information effectively during presentations.</p>
+        <h3>Features of MS PowerPoint:</h3>
+        <ul>
+            <li><b>Slide Layouts:</b> Provides a wide range of templates and themes for professional presentation designs.</li>
+            <li><b>Animations & Transitions:</b> Adds movement to slides and elements for better engagement.</li>
+            <li><b>Multimedia Integration:</b> Supports embedding images, videos, audio files, and hyperlinks.</li>
+            <li><b>Slide Master:</b> Offers consistent formatting throughout the presentation with custom layouts and designs.</li>
+        </ul>
+  
+    <div class="image">
+        <img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/ap.jpg" height="350px" width="1000px">
+        <p class="italic">Fig: Microsoft 365 Application Package</p>
+
+    </div>
+    </div>
+    <div class="footer"><p>&copy; All rights reserved. Grade XI Computer Science, 2025.</p></div>
+</body>
+</html>

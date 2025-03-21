@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 3 - Software (Operating System)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .image {
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            align-items: center;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/fn.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        h2, h3 {
+            color: #ffcc5c;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #444;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: #ffcc5c;
+        }
+        td {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapter 3 - Computer Software and Operating System</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    <div class="content">
+        <h2>1. Introduction to Operating Systems</h2>
+        <p>An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. It acts as an intermediary between the user and the computer hardware, ensuring that applications can perform efficiently while accessing necessary resources. Operating systems are essential for the functioning of any computing device, from personal computers and mobile devices to servers and embedded systems.</p>
+        <p>The OS performs several critical functions, including process management, memory management, file system management, device management, and security. It ensures smooth multitasking by allocating CPU time to various processes and handling conflicts between tasks. Additionally, operating systems provide user interfaces, such as graphical user interfaces (GUIs) and command-line interfaces (CLIs), making it easier for users to interact with the system.</p>
+        <p>Examples of popular operating systems include Windows, macOS, Linux, Android, and iOS. These systems differ in design, functionality, and user interface, but they all serve the core purpose of managing system resources and providing a platform for application software to run.</p>
+
+        <h3>2. Functions of Operating Systems</h3>
+        <p>The primary functions of an operating system include:</p>
+        <ul>
+            <li><b>Process Management:</b> Handling the creation, scheduling, and termination of processes. The OS ensures that each process receives adequate CPU time and manages process priorities. It also handles inter-process communication and synchronization to maintain data consistency.</li>
+            <li><b>Memory Management:</b> Managing the allocation and deallocation of memory spaces as needed by various programs. The OS tracks which parts of memory are in use and by whom, optimizes memory usage, and prevents memory leaks. It also handles virtual memory, which extends physical memory using disk space.</li>
+            <li><b>File System Management:</b> Organizing, storing, and retrieving files on storage devices. The OS provides file naming, directory structure, access control, and data integrity. It also handles file permissions to protect data from unauthorized access.</li>
+            <li><b>Device Management:</b> Controlling and coordinating the use of peripheral devices such as printers and disk drives. The OS manages device drivers that facilitate communication between hardware components and the system, ensuring smooth I/O operations.</li>
+            <li><b>Security and Access Control:</b> Protecting data and resources from unauthorized access and ensuring secure system operations. The OS implements authentication mechanisms, access control lists (ACLs), and encryption to safeguard sensitive data.</li>
+        </ul>
+
+        <h3>3. Types of Operating Systems</h3>
+        <h4> A) On the basis of Processing</h4>
+        <p>Operating systems can be categorized based on their functionality and intended use. Here are some common types of operating systems:</p>
+        <ul>
+            <li><b>Batch Operating System:</b> Processes batches of jobs without user interaction. Suitable for large jobs where immediate response is not required.</li>
+            <li><b>Time-Sharing Operating System:</b> Allows multiple users to access the system concurrently. It provides fast response time by rapidly switching between tasks.</li>
+            <li><b>Distributed Operating System:</b> Manages a group of independent computers and makes them appear as a single system. It enables resource sharing and data processing across multiple machines.</li>
+            <li><b>Network Operating System:</b> Provides networking capabilities, allowing computers to communicate and share resources over a network.</li>
+            <li><b>Real-Time Operating System (RTOS):</b> Designed for applications requiring precise timing and control, such as embedded systems and industrial automation.</li>
+            <li><b>Mobile Operating System:</b> Optimized for mobile devices, offering features like touch interaction, lightweight performance, and app management.</li>
+        </ul>
+
+        <h4>B) On the basis of User Interface (UI)</h4>
+        <p>A user interface allows users to interact with the computer system. It provides an ideal environment to enhance computing experience by structuring the interaction between the user and the computer. UI plays a vital role in smooth computer operation. There are mainly two types of User Interface:</p>
+        <h4>1) Character User Interface (CUI)</h4>
+        <p>Character User Interface (CUI) is a text-based interface where users interact with the system by typing commands. Unlike GUI, CUI does not provide graphical elements such as icons or menus. The entire interaction takes place through a command prompt, making it essential for users to memorize commands. Due to its complexity, it is less user-friendly and is generally used by advanced users or system administrators. It is highly efficient and consumes fewer system resources compared to GUI. Examples of CUI-based operating systems include MS-DOS and UNIX.</p>
+        <h4>2) Graphical User Interface (GUI)</h4>
+        <p>Graphical User Interface (GUI) is a user-friendly interface that allows interaction through graphical elements like windows, icons, and buttons. It eliminates the need to remember complex commands, making it accessible to users with minimal technical knowledge. GUI systems use pointing devices such as a mouse or touchpad for navigation. Due to its visual appeal and ease of use, GUI has become the standard for modern operating systems. Common examples include Windows, macOS, and Linux distributions with desktop environments like GNOME and KDE.</p>
+        <h3>Differences between CUI and GUI</h3>
+        <table>
+            <tr>
+                <th>Character User Interface (CUI)</th>
+                <th>Graphical User Interface (GUI)</th>
+            </tr>
+            <tr>
+                <td>Interaction through text commands.</td>
+                <td>Interaction through graphical elements (icons, menus).</td>
+            </tr>
+            <tr>
+                <td>Requires memorization of commands.</td>
+                <td>User-friendly, no command memorization needed.</td>
+            </tr>
+            <tr>
+                <td>Single-tasking or limited multitasking.</td>
+                <td>Supports multitasking efficiently.</td>
+            </tr>
+            <tr>
+                <td>Faster and more resource-efficient.</td>
+                <td>Slower, requires more system resources.</td>
+            </tr>
+            <tr>
+                <td>Used in older or low-spec systems (e.g., MS-DOS, UNIX).</td>
+                <td>Used in modern systems (e.g., Windows, macOS, Linux).</td>
+            </tr>
+        </table>
+        <h4>C) On the Mode of User</h4>
+        <p>There are two types of operating systems based on the mode of user:</p>
+        <h4>Single User</h4>
+        <p>A single user operating system is designed for one user at a time. This is the most common type of OS used on personal computers and workstations. There are two types of single user systems: single-user single-tasking and single-user multitasking. An example of a single-user single-tasking OS is MS-DOS, while Windows is an example of a single-user multitasking OS.</p>
+        <h4>Multi User</h4>
+        <p>Multi-user operating systems allow multiple users to access a single system simultaneously. The OS manages resources efficiently, providing each user with a slice of processing time. This concept is known as time-sharing. Examples include Linux and UNIX.</p>
+        <h3>Some Important terminologies related with OS</h3>
+        <p>Some important OS terminologies are:</p>
+        <ol>
+            <li><p><b>Spooling:</b> Spooling is a technique that balances speed differences between fast CPUs and slower I/O devices, commonly used in printing tasks. It queues print jobs in a buffer and prints them sequentially while the CPU remains free to execute other tasks. This technique enhances system efficiency by overlapping input/output operations with CPU processing.</p></li>
+            <li><p><b>Process:</b> A process is an instance of a program in execution. It differs from a program, as a program is static code while a process is a dynamic entity. Processes may be in different states, including running, ready, and blocked. The OS manages these states to ensure smooth execution.</p></li>
+            <li><p><b>Thread:</b> Threads are lightweight processes that execute independently within the context of a larger process. Threads help improve application performance by allowing concurrent execution and minimizing context switching.</p></li>
+            <li><p><b>Scheduling:</b> Scheduling is the mechanism through which the OS decides the order of task execution. It uses algorithms like priority scheduling, where high-priority tasks execute first, and time-sharing scheduling, where each task gets an equal time slice.</p></li>
+            <li><p><b>Buffering:</b> Buffering is the process of storing data temporarily while it is being transferred between devices or applications. It helps manage speed differences between fast processors and slower peripheral devices, ensuring smooth data flow.</p></li>
+            <li><p><b>Virtual Memory:</b> Virtual memory is a technique that allows a computer to compensate for a shortage of physical memory by temporarily transferring data from random access memory to disk storage. It enables large applications to run on systems with limited RAM by using secondary storage as an extension of main memory.</p></li>
+        </ol>
+    </div>
+    <div class="footer">&copy; All rights reserved. Grade XI Computer Science, 2025.</div>
+</body>
+</html>

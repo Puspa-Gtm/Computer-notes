@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 2 - Boolean Algebra and Logic Gates</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .image {
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            align-items: center;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/lg.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        h2, h3 {
+            color: #ffcc5c;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapter 2 - Boolean Algebra and Logic Gates</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    <div class="content">
+        <h2>1. Introduction to Boolean Algebra</h2>
+        <p>Boolean algebra is a mathematical framework used to analyze and simplify digital logic circuits. It deals with binary variables (0 and 1) and logical operations such as AND, OR, and NOT. Boolean algebra is essential in designing combinational and sequential circuits, as well as simplifying logical expressions.</p>
+
+        <h3>2. Basic Boolean Laws</h3>
+        <p>Boolean algebra follows a set of fundamental laws that are useful in simplifying logic expressions. These include:</p>
+        <ul>
+            <li><b>Identity Law:</b> A + 0 = A, A × 1 = A</li>
+            <li><b>Null Law:</b> A + 1 = 1, A × 0 = 0</li>
+            <li><b>Idempotent Law:</b> A + A = A, A × A = A</li>
+            <li><b>Inverse Law:</b> A + ¬A = 1, A × ¬A = 0</li>
+            <li><b>Distributive Law:</b> A × (B + C) = (A × B) + (A × C)</li>
+            <li><b>Absorption Law:</b> A + (A × B) = A</li>
+        </ul>
+
+        <h3>3. De Morgan's Theorems</h3>
+        <p>De Morgan's theorems are useful for simplifying logic expressions. They state that:</p>
+        <ul>
+            <li>Theorem 1: ¬(A ∧ B) = ¬A ∨ ¬B</li>
+            <li>Theorem 2: ¬(A ∨ B) = ¬A ∧ ¬B</li>
+        </ul>
+        <p>These theorems prove that the negation of a conjunction is equivalent to the disjunction of the negations, and vice versa. This principle is crucial in logic simplification.</p>
+
+    
+         <h3>4. Logic Gates and Their Functions</h3>
+        <p>Logic gates are fundamental building blocks of digital circuits. They perform logical operations on one or more binary inputs and produce a single binary output. There are seven basic logic gates:</p>
+        <ul>
+            <li><b>AND Gate:</b> Produces a high output (1) only if both inputs are high. Truth table:</li>
+            <table>
+                <tr><th>A</th><th>B</th><th>Output (A·B)</th></tr>
+                <tr><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>1</td><td>0</td></tr>
+                <tr><td>1</td><td>0</td><td>0</td></tr>
+                <tr><td>1</td><td>1</td><td>1</td></tr>
+            </table>
+            <li><b>OR Gate:</b> Produces a high output (1) if at least one input is high. Truth table:</li>
+            <table>
+                <tr><th>A</th><th>B</th><th>Output (A+B)</th></tr>
+                <tr><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>1</td><td>1</td></tr>
+                <tr><td>1</td><td>0</td><td>1</td></tr>
+                <tr><td>1</td><td>1</td><td>1</td></tr>
+            </table>
+        </ul>
+    </ul>
+    <h3>5. Universal Gates</h3>
+    <p>Universal gates are logic gates that can perform any Boolean function without needing any other gate types. The NAND and NOR gates are the most common universal gates because they can be combined to implement AND, OR, NOT, XOR, and XNOR functions. Due to their versatility, they are widely used in digital circuit design to minimize complexity and cost. Universal gates simplify circuit construction and are fundamental in creating efficient logic systems.</p>
+   
+        <h3>6. De Morgan's Theorems</h3>
+        <p>De Morgan's Theorems are two transformation rules that are very useful in simplifying Boolean expressions:</p>
+        <ul>
+            <li>Theorem 1: ¬(A ∧ B) = ¬A ∨ ¬B</li>
+            <li>Theorem 2: ¬(A ∨ B) = ¬A ∧ ¬B</li>
+        </ul>
+        <h3>Proof of Theorem 1</h3>
+        <table>
+            <tr><th>A</th><th>B</th><th>¬A</th><th>¬B</th><th>A ∧ B</th><th>¬(A ∧ B)</th><th>¬A ∨ ¬B</th></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+        </table>
+        <p>The truth table shows that ¬(A ∧ B) and ¬A ∨ ¬B produce the same output, proving the first theorem. </p>
+        <h3>Proof of Theorem 2</h3>
+        <table>
+            <tr><th>A</th><th>B</th><th>¬A</th><th>¬B</th><th>A ∨ B</th><th>¬(A ∨ B)</th><th>¬A ∧ ¬B</th></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+        </table>
+        <p>The truth table shows that ¬(A ∨ B) and ¬A ∧ ¬B produce the same output, proving the second theorem.</p>
+   
+    </div>
+        </div>
+    <div class="footer">&copy; All rights reserved. Grade XI Computer Science, 2025.</div>
+</body>
+</html>

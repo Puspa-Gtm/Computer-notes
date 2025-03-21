@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 5 - Programming Concepts and Logics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            background: linear-gradient(135deg, #121212, #1c1c1c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/cw.jpg') no-repeat center center/cover;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.8);
+            animation: fadeInSlide 2s ease-in-out;
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 4px solid #222;
+        }
+        .nav:hover {
+            background: linear-gradient(90deg, #444, #666);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            background-color: #444;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 60px;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin: auto;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        h2, h3, h4 {
+            color: #ffcc5c;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            color: white;
+            padding: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapter 5 - Programming Concepts and Logics</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ch-1.html">Chapter 1</a>
+        <a href="Ch-2.html">Chapter 2</a>
+        <a href="Ch-3.html">Chapter 3</a>
+        <a href="Ch-4.html">Chapter 4</a>
+        <a href="Ch-5.html">Chapter 5</a>
+        <a href="Ch-6.html">Chapter 6</a>
+        <a href="Ch-7.html">Chapter 7</a>
+        <a href="Ch-8.html">Chapter 8</a>
+    </div>
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>Every computerized device needs specific commands to perform tasks. These commands, written in programming languages, instruct the computer to carry out desired actions. A set of instructions forms a program, and multiple programs are integrated to create software. In essence, software is a collection of interrelated programs that work together to perform specific functions.</p>
+        <p>Programs written by programmers are called <b>source programs</b>. Since computers do not directly understand these programs, they must be converted into machine language using language translators such as assemblers, compilers, and interpreters.</p>
+
+        <h3>Qualities of Good Programs</h3>
+        <ul>
+            <li><b>Understandability:</b> Good programs are easy to read and understand, with clear and logical structures that simplify comprehension and maintenance.</li>
+            <li><b>Accuracy:</b> A reliable program must be error-free, performing its intended tasks without producing incorrect results or crashes.</li>
+            <li><b>Reliability:</b> Programs should function correctly under various conditions, consistently delivering accurate outputs without unexpected failures.</li>
+            <li><b>User-Friendly Interface:</b> A well-designed program offers an intuitive and straightforward interface that enhances the user experience and reduces learning curves.</li>
+            <li><b>Portability and Flexibility:</b> The program should be adaptable to different systems with minimal modification, allowing it to run efficiently on various platforms.</li>
+        </ul>
+        <h2>Programming Language</h2>
+        <p>Programming languages are essential for creating software applications and allowing users to communicate with computers. They consist of sets of keywords, variables, operators, loops, and other elements that are combined to perform specific tasks. Programmers use these languages to write instructions that guide computers on how to execute operations efficiently and accurately. Programming languages can be classified into low level and high level programming languages.</p>
+
+        <h3>Low-Level Programming Languages</h3>
+        <p>Low-level programming languages are closer to the hardware and are machine-dependent. These languages require a thorough understanding of computer architecture and are typically more difficult to write, debug, and maintain. They provide high execution speed and are essential for system programming and developing device drivers.</p>
+        
+        <h4>1. Machine-Level Language (1GL)</h4>
+        <p>Machine-level language, also known as first-generation language (1GL), consists entirely of binary code (0s and 1s) directly understood by the computer's processor. It is highly efficient and fast, as there is no need for translation. However, it is also extremely challenging to program and debug due to its complex binary syntax. This language is machine-specific, meaning a program written for one system cannot run on another.</p>
+        <p><b>Advantages:</b></p>
+        <ul>
+            <li>Directly executed by the processor, leading to high execution speed.</li>
+            <li>No need for language translators or compilers.</li>
+            <li>Efficient for hardware-specific tasks.</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul>
+            <li>Difficult to write, understand, and debug due to binary code.</li>
+            <li>Machine dependency limits cross-platform compatibility.</li>
+            <li>Requires detailed knowledge of computer architecture.</li>
+        </ul>
+        
+        <h4>2. Assembly Language (2GL)</h4>
+        <p>Assembly language, or second-generation language (2GL), uses symbolic instructions known as mnemonics (like ADD, SUB, MOV) instead of binary code. It is a step above machine-level language but still hardware-specific. Assembly code is converted to machine language using an assembler. It is commonly used for embedded systems and low-level hardware programming.</p>
+        <p><b>Advantages:</b></p>
+        <ul>
+            <li>Easier to write and debug compared to machine-level language.</li>
+            <li>Faster execution than high-level languages due to its proximity to hardware.</li>
+            <li>Useful for writing device drivers and real-time applications.</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul>
+            <li>Machine dependent, making programs non-portable.</li>
+            <li>Complex and time-consuming to develop and maintain.</li>
+            <li>Requires knowledge of the hardware architecture.</li>
+        </ul>
+        
+        <h3>High-Level Programming Languages</h3>
+        <p>High-level programming languages are designed to be human-readable and closer to natural language. They are machine-independent and use compilers or interpreters to convert the code into machine language. These languages are commonly used for application development, data processing, and software engineering.</p>
+        
+        <h4>1. Procedural-Oriented Language (3GL)</h4>
+        <p>Procedural-oriented languages, also known as third-generation languages (3GL), focus on defining the procedures or steps to achieve a task. They follow a top-down approach and are used to develop general-purpose applications. Examples include C, FORTRAN, and COBOL.</p>
+        <p><b>Advantages:</b></p>
+        <ul>
+            <li>Easy to write, understand, and maintain due to structured programming.</li>
+            <li>Machine independent, allowing for cross-platform compatibility.</li>
+            <li>Efficient for complex calculations and data processing.</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul>
+            <li>Less efficient than low-level languages for hardware control.</li>
+            <li>Requires a language translator, resulting in slower execution.</li>
+        </ul>
+        
+        <h4>2. Object-Oriented Language (4GL)</h4>
+        <p>Fourth-generation languages (4GL) emphasize data manipulation and ease of use, focusing on problem-solving rather than procedure definition. They support features like encapsulation, inheritance, and polymorphism. Examples include Python, Java, and Visual Basic.</p>
+        <p><b>Advantages:</b></p>
+        <ul>
+            <li>More user-friendly with higher-level abstractions.</li>
+            <li>Supports rapid application development and prototyping.</li>
+            <li>Promotes reusability and modularity through object-oriented concepts.</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul>
+            <li>Slower execution compared to low-level languages.</li>
+            <li>Requires more system resources.</li>
+        </ul>
+        
+        <h4>3. Natural Language (5GL)</h4>
+        <p>Fifth-generation languages (5GL) are designed to make programming closer to human language. They focus on problem-solving through logic and inference rather than explicit algorithmic steps. PROLOG is a well-known example.</p>
+        <p><b>Advantages:</b></p>
+        <ul>
+            <li>Easier for non-programmers to write and understand.</li>
+            <li>Useful for artificial intelligence and machine learning applications.</li>
+        </ul>
+        <p><b>Disadvantages:</b></p>
+        <ul>
+            <li>Slow execution due to complex logic processing.</li>
+            <li>Limited in terms of performance and efficiency for low-level tasks.</li>
+        </ul>
+        <h2>Language Translators/Processors</h2>
+<p>Language translators are essential tools that convert code written in high-level or assembly languages (source code) into machine-level language (object code). Since machines cannot directly understand high-level code, translators bridge this gap by converting the code into binary format. There are three main types of language translators:</p>
+
+<h3>Assembler</h3>
+<p>An assembler translates assembly language programs into machine code. Since assembly language is close to machine code, the translation is relatively straightforward and fast. Assemblers convert the entire program at once and generate an object code file.</p>
+
+<h3>Compiler</h3>
+<p>A compiler converts high-level language programs into machine code all at once. It performs comprehensive syntax and semantic analysis and generates optimized machine code. Due to this, compiled programs generally execute faster, but the compilation process can take time. Examples of compiled languages include C, C++, and Java.</p>
+
+<h3>Interpreter</h3>
+<p>An interpreter translates high-level language code into machine code line by line during execution. This makes debugging easier since errors are detected one line at a time. However, interpreted programs tend to run slower than compiled ones. Popular interpreted languages include Python, Ruby, and PHP.</p>
+<h2>Difference between Compiler and Interpreter</h2>
+<table>
+  <tr>
+    <th>S.N.</th>
+    <th>Compiler</th>
+    <th>Interpreter</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>It translates the whole program into object code at a time.</td>
+    <td>It translates one line or a single statement of a program into object code at a time.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>It finds out the error after compiling the complete program.</td>
+    <td>It finds out the error after translating a line of the program at a time.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>The translating process is incredibly faster.</td>
+    <td>The translating process is slower.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Compiler-based programs are difficult to code and debug.</td>
+    <td>Interpreter-based programs are easy to code and debug.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>It is usually a large program and requires larger memory space.</td>
+    <td>It is usually a smaller program and requires less memory space.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>New programming languages don’t use a compiler.</td>
+    <td>New programming languages use an interpreter.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Examples: C, C++, Java, FORTRAN, etc.</td>
+    <td>Examples: BASIC, C#, PHP, etc.</td>
+  </tr>
+</table><br>
+<h2>Syntax and Semantics</h2>
+<p>Syntax refers to the set of rules that define the structure of a programming language, while semantics deals with the meaning attached to each word or symbol within the code. For example, in QBASIC, the statement <code>PRINT "This is programming"; P</code> has <b>PRINT</b> as the semantic element and the entire line as the syntax.</p>
+
+<h2>Errors in Programming</h2>
+<p>An error in a program that prevents it from executing correctly is known as a bug. Debugging is the process of identifying and fixing these errors. Errors can arise from improper syntax, logic flaws, or runtime issues. The three main types of errors are:</p>
+<ul>
+  <li><b>Syntax Error:</b> Occurs when code does not follow the correct syntax rules of the programming language. Detected by compilers or interpreters.</li>
+  <li><b>Logical Error:</b> Occurs when the logic of the code is flawed, resulting in incorrect output. Not detected by language processors.</li>
+  <li><b>Runntime Error:</b> Occurs while the program is running, often due to insufficient memory or device issues. Not detected by compilers or interpreters.</li>
+</ul>
+<h2>Common Terminologies in Programming</h2>
+<h3>Data Types</h3>
+<p>Data types specify the type of data to be used in a program. Some common types are:</p>
+<ul>
+  <li><b>Numeric:</b> Combination of positive, negative whole numbers, and zero.</li>
+  <li><b>Character:</b> Combination of alphanumeric values and special symbols.</li>
+</ul>
+<h3>Variable and Constant</h3>
+<ul>
+  <li><b>Variable:</b> Holds numeric or alphanumeric values that change during program execution.</li>
+  <li><b>Constant:</b> Holds numeric or alphanumeric values that do not change throughout program execution.</li>
+</ul>
+<h3>Operands and Operators</h3>
+<p>Operators are symbols that perform operations on operands. Some common types of operators are:</p>
+<ul>
+  <li><b>Arithmetic Operators:</b> Perform mathematical calculations like addition (+), subtraction (-), multiplication (*), and division (/).</li>
+  <li><b>Relational Operators:</b> Compare two values and return a Boolean result (e.g., ==, !=, >, <, >=, <=).</li>
+  <li><b>Logical Operators:</b> Combine two or more conditions (e.g., AND, OR, NOT).</li>
+  <li><b>Assignment Operators:</b> Assign values to variables (e.g., =, +=, -=, *=, /=).</li>
+</ul>
+<h2>Program Design Tools</h2>
+<p>There are several program design tools that are available. Some of the commonly used tools are algorithms, flowcharts, and pseudocode.</p>
+<h3>Algorithm</h3>
+<p>An algorithm is a step-by-step procedure or sequence of steps for solving a specific problem. Algorithms are written in simple English and are not tied to any programming language.</p>
+<h4>Rules for Writing an Algorithm:</h4>
+<ul>
+  <li>Should execute output after a finite number of steps.</li>
+  <li>Should not depend on any programming language.</li>
+  <li>Should terminate after a finite number of steps.</li>
+</ul>
+<h4>Examples:</h4>
+<p><b>A. Algorithm to calculate simple interest:</b></p>
+<ol>
+  <li>Start</li>
+  <li>Read the values of P, T, R</li>
+  <li>Calculate simple interest using: I = (P * T * R) / 100</li>
+  <li>Display simple interest (I)</li>
+  <li>Stop</li>
+</ol>
+<p><b>B. Algorithm to find the greatest number between two numbers:</b></p>
+<ol>
+  <li>Start</li>
+  <li>Read any two numbers, a and b</li>
+  <li>Check if (a > b)</li>
+  <li>If yes, display 'The greatest number is a'</li>
+  <li>If no, display 'The greatest number is b'</li>
+  <li>Stop</li>
+</ol>
+<h3>Flowchart</h3>
+<p>A flowchart is a diagrammatic or pictorial representation of steps involved in an algorithm to solve a particular problem. It uses several geometrical shapes and symbols to represent different actions involved in problem-solving.</p>
+
+<h4>Types of Flowcharts:</h4>
+<ul>
+  <li><b>Program Flowchart:</b> Focuses on a specific problem and represents a single task or logic at a time.</li>
+  <li><b>System Flowchart:</b> Shows the logical flow of a program and its collection, providing an overview of data flow and sequence of operations within a system.</li>
+</ul>
+
+<h4>Flowchart Symbols:</h4>
+<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc.jpg" alt="Flowchart Symbols" style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<figcaption>Fig: Symbols used in Flowchart</figcaption>
+<h4>Examples:</h4>
+
+<p>Q. Draw flowchart to calculate simple interest.</p>
+<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc2.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<p>Q. Draw flowchart to calculate the greatest among two numbers.</p>
+<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc3.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<h3>What is C Programming Language?</h3>
+<p>C is a High-Level Programming Language, developed by Dennis Ritchie at AT&T’s Bell Laboratories in the USA in 1970. It is a very powerful programming language used for both system programming and application programming. Hence, it is often known as a Middle-Level Programming Language, as it supports features of both low-level and high-level languages.</p>
+
+<h4>Features of C Language:</h4>
+<ul>
+  <li>Supports both high-level and low-level programming, making it a mid-level programming language.</li>
+  <li>Widely used for system programming and also popular for application programming.</li>
+  <li>Offers fast and efficient program development.</li>
+  <li>Includes powerful tools and keywords.</li>
+  <li>Has its own text editor and compiler.</li>
+  <li>Supports structured programming concepts.</li>
+  <li>Is easily portable across systems.</li>
+  <li>Provides a comprehensive library of functions.</li>
+  <li>Highly flexible for different programming needs.</li>
+  <h3>Some Common Terminologies in C Programming</h3>
+<ul>
+  <li><strong>Identifiers:</strong> Names given to entities such as variables, arrays, functions, structures, unions, and labels.</li>
+  <li><strong>Keywords:</strong> Reserved words that are predefined in the C language. There are 32 keywords as per ANSI, such as <code>void</code>, <code>if</code>, <code>else</code>, <code>while</code>, <code>for</code>, <code>break</code>, <code>continue</code>, etc.</li>
+  <li><strong>Data Types:</strong> Specify the type of data to be used in a program. The primary types in C are:
+    <ul>
+      <li><strong>int:</strong> Represents integer numbers without decimal points (2 bytes).</li>
+      <li><strong>float:</strong> Represents real numbers with decimal points (4 bytes).</li>
+      <li><strong>char:</strong> Represents a single character (1 byte).</li>
+      <li><strong>void:</strong> Represents no value or null.</li>
+    </ul>
+  </li>
+  <li><strong>Constants:</strong> Fixed values that do not change during program execution.</li>
+  <li><strong>Variables:</strong> Entities whose values can be changed during program execution.</li>
+  <li><strong>Statements:</strong> Combinations of keywords, identifiers, operators, variables, and constants, ending with a semicolon or a curly bracket. They can be simple or compound statements.</li>
+  <li><strong>Escape Sequences:</strong> Special character combinations like <code>\n</code> (new line), <code>\t</code> (tab), and <code>\0</code> (null character) that have specific meanings.</li>
+  <li><strong>Operators:</strong> Symbols used for performing mathematical and logical calculations. Operators can be unary (one operand), binary (two operands), or ternary (three operands). Examples include <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code>. They are categorized as:
+    <ul>
+        <li><strong>Arithmetic Operators:</strong> Used for basic arithmetic operations such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).</li>
+        <li><strong>Relational Operators:</strong> Used to compare two values, returning true or false, e.g., ==, !=, >, <, >=, <=.</li>
+        <li><strong>Equality Operators:</strong> Used to check equality (==) and inequality (!=) between values.</li>
+        <li><strong>Logical Operators:</strong> Used to perform logical operations such as AND (&&), OR (||), and NOT (!).</li>
+        <li><strong>Assignment Operators:</strong> Used to assign values to variables, e.g., =, +=, -=, *=, /=.</li>
+        <li><strong>Increment/Decrement Operators:</strong> Used to increase (++) or decrease (--) the value of a variable by 1.</li>
+        <li><strong>Conditional Operator (Ternary Operator):</strong> Used to evaluate a condition and return a value based on the result, e.g., <code>condition ? value1 : value2</code>.</li>
+        <li><strong>Bitwise Operators:</strong> Used to manipulate individual bits of data, such as AND (&), OR (|), XOR (^), NOT (~), and bit shifts (<<, >>).</li>
+        <li><strong>Special Operators:</strong> Include sizeof(), pointer operators (* and &), and member access operators (., ->).</li>
+      </ul>
+    </li>
+
+</ul>
+
+<h3>Control Structures in C:</h3>
+<p>Control structures in C are constructs that define the flow of control in a program. They are essential for making decisions and performing repetitive tasks. There are two main types of control structures:</p>
+
+<h4>1. Conditional Control Structures:</h4>
+<p>Conditional control structures are used to make decisions based on conditions. They determine the execution path of a program by evaluating conditions and executing corresponding blocks of code. Common conditional control structures include:</p>
+<ul style="list-style-type: disc;">
+  <li><strong>if statement:</strong> The simplest conditional statement that executes a block of code if a specified condition is true. If the condition is false, the code block is skipped.</li>
+  <li><strong>if-else statement:</strong> An extension of the if statement that provides an alternate block of code to execute when the condition is false.</li>
+  <li><strong>switch statement:</strong> A multi-way branching statement that selects one of many code blocks to execute based on the value of an expression. It is often used when multiple conditions are checked for equality.</li>
+</ul>
+
+<h4>2. Iterative Control Structures:</h4>
+<p>Iterative control structures are used to execute a block of code repeatedly, either for a fixed number of times or while a given condition holds true. These loops are crucial when performing repetitive tasks, calculations, or processing data collections.</p>
+<ul style="list-style-type: disc;">
+  <li><strong>for loop:</strong> Typically used when the number of iterations is known beforehand. It consists of initialization, condition-checking, and increment/decrement, all in one line.</li>
+  <li><strong>while loop:</strong> Continues to execute a block of code as long as the specified condition remains true. It is used when the number of iterations is not predetermined.</li>
+  <li><strong>do-while loop:</strong> Similar to the while loop, but ensures that the code block is executed at least once, as the condition is checked after the execution.</li>
+</ul>
+<h3>Arrays in C</h3>
+<p>Arrays are collections of variables of the same data type stored in contiguous memory locations. They are used to store multiple values under a single name, allowing easy access and manipulation using an index. Arrays can be one-dimensional (linear) or multi-dimensional (like matrices). To declare an array in C, use the syntax:</p>
+<pre><code>data_type array_name[size];</code></pre><br>
+<p><b>For example:</b></p>
+<pre><code>int numbers[5];</code></pre>
+<p>Arrays are useful when the number of variables is large, as they allow efficient access and storage. They are commonly used for data processing, sorting, and storing sequences of elements.</p>
+
+<h3>Strings in C:</h3>
+<p>Strings in C are essentially arrays of characters, terminated by a null character '\0'. They are used to store sequences of characters and are manipulated using standard library functions like <code>strlen()</code>, <code>strcpy()</code>, <code>strcmp()</code>, and more. Strings can be declared as:</p>
+<pre><code>char str[50];</code></pre>
+<p>They are commonly used for storing text, displaying messages, and performing text processing. String handling is an essential part of programming when dealing with textual data.</p>
+
+</div>
+
+    <div class="footer"><p>&copy; All rights reserved. Grade XI Computer Science, 2025.</p></div>
+</body>
+</html>
