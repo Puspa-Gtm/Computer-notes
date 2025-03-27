@@ -403,6 +403,91 @@ figcaption {
 <p>Strings in C are essentially arrays of characters, terminated by a null character '\0'. They are used to store sequences of characters and are manipulated using standard library functions like <code>strlen()</code>, <code>strcpy()</code>, <code>strcmp()</code>, and more. Strings can be declared as:</p>
 <pre><code>char str[50];</code></pre>
 <p>They are commonly used for storing text, displaying messages, and performing text processing. String handling is an essential part of programming when dealing with textual data.</p>
+<h2>Few Examples of Programs created using C</h2>
+<h4>Q. Write a program to find whether an input number is prime or not.</h4>
+<h4>Code </h4>
+<p>#include<stdio.h>
+    int main(){ <br>
+        int n,i, count=0;<br>
+        printf("Enter a number:");<br>
+        scanf("%d",&n);<br>
+        for(i=1;i<=n;i++){<br>
+                if(n%i==0)<br>
+                {<br>
+                    count=count+1;<br>
+            }<br>
+        }<br>
+        if(count==2){<br>
+            printf("The given number is prime");<br>
+        }<br>
+        else{<br>
+            printf("The given number is not prime");<br>
+        }<br>
+            return 0;<br>
+    }<br>
+    </p>
+    <h4>Output</h4>
+    <img src="prime.jpg" height="70%" width="70%" ><br>
+<h4>Q. Write a program to find the factorial of an input number</h4>
+<h4>Code</h4>
+<p>#include<stdio.h> <br>
+    int main(){<br>
+        int fact=1, n, i;<br>
+        printf("Enter a number: ");<br>
+        scanf("%d",&n);<br>
+        if(n<0){<br>
+            printf("Enter a valid number");<br>
+        }<br>
+        else{<br>
+        for(i=n;i>=1;i--){<br>
+            fact=fact*i;<br>
+        }<br>
+        printf("The factorial of %d is %d",n,fact);<br>
+    }<br>
+        return 0;<br>
+    }<br></p>
+<h4>Output</h4>
+<img src="factorial.jpg" height="70%" width="70%">
+<br><h4>Q. Write a program to check if the input number is a palindrome or not</h4>
+<h4>Code</h4>
+<p>#include <stdio.h><br>
+    int main() {<br>
+        int n,on,rn=0,rem;<br>
+        printf("Enter a number: ");<br>
+        scanf("%d", &n);<br>
+        on = n;<br>
+        while(n !=0){<br>
+            rem=n%10;<br>
+            rn= rn*10+ rem;<br>
+            n=n/10;<br>
+        }<br>
+        if(on==rn){<br>
+            printf("%d is a palindrome", on);<br>
+        }<br>
+        else{<br>
+            printf("%d is not a palindrome", on);<br>
+        }<br>
+        return 0;<br>
+    }<br>
+    </p>
+<h4>Output</h4>
+<br>
+<h4>Q. Write a program in C to generate fibonnaci series for n terms</h4>
+<h4>Code</h4>
+<br><p>#include<stdio.h><br>
+    int main(){<br>
+        int s, n, i, a=0, b=1;<br>
+        printf("Enter the number of iterations for Fibbonacci Series : ");<br>
+        scanf("%d", &n);<br>
+        for(i=1;i<=n;i++){<br>
+            s=b+a;<br>
+            b=a;<br>
+            a=s;<br>
+            printf("%d, ",s);<br>
+        }<br>
+        return 0;<br>
+    }<br></p><br>
+<h4>Output</h4>
 
 </div>
 
