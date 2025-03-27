@@ -14,8 +14,11 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
+        img{
+            margin-left: 130px;
+        }
         .hero {
-            background: url('C:/Users/PIS/Downloads/HTML_Project/024neb942/cw.jpg') no-repeat center center/cover;
+            background: url('cw.jpg') no-repeat center center/cover;
             height: 85vh;
             display: flex;
             align-items: center;
@@ -320,14 +323,14 @@ figcaption {
 </ul>
 
 <h4>Flowchart Symbols:</h4>
-<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc.jpg" alt="Flowchart Symbols" style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<img src="fc.jpg" alt="Flowchart Symbols" style="display: block; margin: 0 auto; width: 80%; height: auto;">
 <figcaption>Fig: Symbols used in Flowchart</figcaption>
 <h4>Examples:</h4>
 
 <p>Q. Draw flowchart to calculate simple interest.</p>
-<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc2.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<img src="fc2.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
 <p>Q. Draw flowchart to calculate the greatest among two numbers.</p>
-<img src="C:/Users/PIS/Downloads/HTML_Project/024neb942/fc3.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
+<img src="fc3.jpg"  style="display: block; margin: 0 auto; width: 80%; height: auto;">
 <h3>What is C Programming Language?</h3>
 <p>C is a High-Level Programming Language, developed by Dennis Ritchie at AT&T’s Bell Laboratories in the USA in 1970. It is a very powerful programming language used for both system programming and application programming. Hence, it is often known as a Middle-Level Programming Language, as it supports features of both low-level and high-level languages.</p>
 
@@ -406,7 +409,7 @@ figcaption {
 <h2>Few Examples of Programs created using C</h2>
 <h4>Q. Write a program to find whether an input number is prime or not.</h4>
 <h4>Code </h4>
-<p>#include<stdio.h>
+<p>#include &lt;stdio.h&gt;<br>
     int main(){ <br>
         int n,i, count=0;<br>
         printf("Enter a number:");<br>
@@ -430,7 +433,7 @@ figcaption {
     <img src="prime.jpg" height="70%" width="70%" ><br>
 <h4>Q. Write a program to find the factorial of an input number</h4>
 <h4>Code</h4>
-<p>#include<stdio.h> <br>
+<p>#include &lt;stdio.h&gt;<br>
     int main(){<br>
         int fact=1, n, i;<br>
         printf("Enter a number: ");<br>
@@ -450,7 +453,7 @@ figcaption {
 <img src="factorial.jpg" height="70%" width="70%">
 <br><h4>Q. Write a program to check if the input number is a palindrome or not</h4>
 <h4>Code</h4>
-<p>#include <stdio.h><br>
+<p>#include &lt;stdio.h&gt;<br>
     int main() {<br>
         int n,on,rn=0,rem;<br>
         printf("Enter a number: ");<br>
@@ -471,10 +474,11 @@ figcaption {
     }<br>
     </p>
 <h4>Output</h4>
+<img src="palindrome.jpg" height="70%" width="70%">
 <br>
 <h4>Q. Write a program in C to generate fibonnaci series for n terms</h4>
 <h4>Code</h4>
-<br><p>#include<stdio.h><br>
+<br><p>#include &lt;stdio.h&gt;<br>
     int main(){<br>
         int s, n, i, a=0, b=1;<br>
         printf("Enter the number of iterations for Fibbonacci Series : ");<br>
@@ -488,6 +492,31 @@ figcaption {
         return 0;<br>
     }<br></p><br>
 <h4>Output</h4>
+<img src="fibonnaci.jpg" height="70%" width="70%">
+<br>
+<h4>Write a program in C to display whether the number is perfect or not</h4><br>
+<h4>Code</h4><br>
+<p>#include &lt;stdio.h&gt;<br>
+  int main(){<br>
+    int i, n, factor=0;<br>
+    printf("Enter a number: ");<br>
+    scanf("%d",&n);<br>
+    for(i=1;i<n;i++){<br>
+      if(n%i==0){<br>
+      factor=factor+i;<br>
+      }<br>
+    }<br>
+    if(factor==n){<br>
+      printf("%d is a perfect number", n);<br>
+    }<br>
+    else{<br>
+      printf("%d is not a perfect number",n);<br>
+    }<br>
+    return 0; <br>
+  }<br></p>
+  <br>
+  <img src="pn.jpg" height="70%" width="70%">
+  <br>
 
 </div>
 
